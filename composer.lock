@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "71dd0fb519e554298a605a21af01663e",
-    "content-hash": "8f4bb5d3f5272d01530bb12371dd3ff5",
+    "hash": "ea738c9deca00e657609f70fbe870290",
+    "content-hash": "dcb43117aaf6bf05542d5e1aa1429b2f",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -374,6 +374,54 @@
                 "uri"
             ],
             "time": "2016-06-24 23:00:38"
+        },
+        {
+            "name": "hipsterjazzbo/landlord",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HipsterJazzbo/Landlord.git",
+                "reference": "f87e974586114afe5895ac786d626ff482f81ee5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HipsterJazzbo/Landlord/zipball/f87e974586114afe5895ac786d626ff482f81ee5",
+                "reference": "f87e974586114afe5895ac786d626ff482f81ee5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.2.*|5.3.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "laravel/framework": "5.2.*|5.3.*",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HipsterJazzbo\\Landlord\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Fidecaro",
+                    "email": "calebfidecaro@gmail.com"
+                }
+            ],
+            "description": "A simple, single database multi-tenancy solution for Laravel 5.2+",
+            "keywords": [
+                "multitenancy",
+                "multitenant",
+                "tenancy",
+                "tenant"
+            ],
+            "time": "2016-09-08 22:38:44"
         },
         {
             "name": "jakub-onderka/php-console-color",

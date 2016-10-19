@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'Limitless',
 
     /*
     |--------------------------------------------------------------------------
@@ -166,7 +166,8 @@ return [
         /*
          * Package Service Providers...
          */
-         Laravel\Passport\PassportServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
+        HipsterJazzbo\Landlord\LandlordServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -224,6 +225,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        'Landlord'   => HipsterJazzbo\Landlord\Facades\Landlord::class,
 
     ],
 
