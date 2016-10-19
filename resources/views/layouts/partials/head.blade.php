@@ -20,7 +20,11 @@
 
     <!-- Theme JS files -->
     <script src="/js/core/app.js"></script>
-    <!-- Laravel | Vue JS file -->
-    <script src="/js/app.js"></script>
 
+    <!-- Scripts Laravel -->
+    <script>
+        window.Laravel = <?php echo json_encode([
+            'csrfToken' => csrf_token(),
+        ]); ?>
+    </script>
 </head>

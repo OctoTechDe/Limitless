@@ -4,6 +4,8 @@
 @include('layouts.partials.head')
 
 <body>
+<!-- app -->
+<div id="app">
 
 <!-- Main navbar -->
 <div class="navbar navbar-default header-highlight">
@@ -86,5 +88,13 @@
 </div>
 <!-- /page container -->
 
+</div>
+<!-- /app -->
+
+<!-- Laravel | Vue JS file -->
+<script src="/js/app.js"></script>
+
 </body>
+
+
 </html>
