@@ -19,6 +19,10 @@ Route::get('/dashboard', function () {
     return view('backend.dashboard');
 });
 
+Route::get('/token', function () {
+    return view('backend.api.token');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
