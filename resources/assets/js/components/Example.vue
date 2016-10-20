@@ -6,7 +6,9 @@
                     <div class="panel-heading">Example Component</div>
 
                     <div class="panel-body">
-                        I'm an example component!
+                        <ul>
+                            <li v-for="user in users">{{ user.email }}</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -16,8 +18,25 @@
 
 <script>
     export default {
-        mounted() {
-            console.log('Component ready.')
+        data: function () {
+            return {
+                users: []
+            };
+        },
+
+        created: function () {
+            this.fetchUsers();
+        },
+
+        methods: {
+            fetchUsers: function () {
+                this.$http.get('/api/users')
+                        .then(response => {
+                    this.users = response.data;
+                });
+            },
         }
     }
+
+
 </script>

@@ -15,12 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('backend.dashboard');
-});
+Route::group(['middleware' => ['auth', 'tenant']], function () {
 
-Route::get('/token', function () {
-    return view('backend.api.token');
+    Route::get('/dashboard', function () {
+        return view('backend.dashboard');
+    });
+
+    Route::get('/token', function () {
+        return view('backend.api.token');
+    });
 });
 
 Auth::routes();
