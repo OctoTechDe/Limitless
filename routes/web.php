@@ -21,7 +21,7 @@ Route::group(['middleware' => ['auth', 'tenant']], function () {
         return view('backend.dashboard');
     });
 
-    Route::get('/token', function () {
+    Route::get('/admin/api', function () {
         return view('backend.api.token');
     });
 });

@@ -61,7 +61,7 @@
 
                             <!-- Administration -->
                             <li class="navigation-header"><span>Administration</span> <i class="icon-menu" title="Administration pages"></i></li>
-                            <li><a href="/token"><i class="icon-key"></i> <span>API</span></a></li>
+                            <li><a href="/admin/api"><i class="icon-key"></i> <span>API</span></a></li>
                             <!-- /administration -->
 
                         </ul>
